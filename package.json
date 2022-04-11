@@ -1,0 +1,19 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postcss:watch": "postcss src/css/style.css -o public/css/style.css --watch"
+  },
+  "dependencies": {
+    "postcss-cli": "^9.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-import": "^14.1.0",
+    "postcss-media-minmax": "^5.0.0"
+  }
+}
