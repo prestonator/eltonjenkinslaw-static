@@ -1,0 +1,181 @@
+/*
+
+Styles that are toggled when initial scroll
+
+*/
+.nav.scroll {
+  justify-content: flex-start;
+  padding: 0 3rem 6rem 3rem;
+  width: 10%;
+  border-radius: 0 0 5rem;
+  transition: width 500ms ease;
+}
+
+.navbar.hidden {
+  display: none;
+}
+
+.hamburger.revealed {
+  display: block;
+  margin-left: -3rem;
+  padding: 1.5rem 4rem 2rem 1rem;
+}
+
+/*
+.
+.
+.
+.
+.
+.
+*/
+.hamburger:not(.active):hover .bar:nth-child(1) {
+  width: 300%;
+}
+
+.hamburger:not(.active):hover .bar:nth-child(3) {
+  width: 100%;
+}
+
+.bar:nth-child(1) {
+  width: 100%;
+}
+
+.bar:nth-child(2) {
+  width: 200%;
+}
+
+.bar:nth-child(3) {
+  width: 300%;
+}
+
+.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.active .bar:nth-child(1) {
+  -webkit-transform: translateY(8px) rotate(-315deg);
+  transform: translateY(8px) rotate(-315deg);
+  width: 300%;
+}
+
+.active .bar:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
+  width: 300%;
+}
+
+
+
+
+
+
+body {
+  background-color: #f7f7f7;
+}
+
+.logo {
+  width: 15vw;
+  margin: 0 1rem;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.display-none {
+  display: none;
+}
+
+nav {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  margin: 0;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ffffff;
+  position: fixed;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.navbar {
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+a.nav-link {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
+}
+
+a.nav-link:hover {
+  color: #857360;
+}
+
+.bar,
+.fa-times {
+  width: 1.5rem;
+  height: 3px;
+  display: block;
+  color: #fff;
+  padding: 0;
+  margin: 6px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: black;
+}
+
+nav ul li {
+  margin: 0 0.75rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5vw;
+  position: relative;
+}
+
+nav ul li::after {
+  content: "";
+  border-bottom: 1px solid black;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: bottom 300ms ease;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul li:hover::after {
+  bottom: 100%;
+}
+
+.placeholder {
+  padding-top: 100vw;
+}

@@ -1,1 +1,3 @@
-@import 'navbar.css';
+@import '__reset.css';
+@import '__mq.css';
+@import '__navbar.css';
